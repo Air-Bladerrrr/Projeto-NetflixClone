@@ -55,9 +55,11 @@ export default () => {
       </section>
 
       <footer>
-        Feito por Nicholas getHomeList
+        <p>
+        Feito por Nicholas Goes
         Direitos de Imagem para Netflix
         Dados da API do themoviedb.org
+        </p>
 
       </footer>
 
