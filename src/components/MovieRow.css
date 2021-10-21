@@ -4,8 +4,8 @@
 .movieRow h2 {
     margin: 0px 0px 0px 30px;
 }
-.movieRow--list {
-    width: 99999999999px;
+.movieRow--list{
+    transition: all ease 0.4s;
 }
 .movieRow--listArea {
     overflow-x: hidden;
@@ -23,4 +23,33 @@
 }
 .movieRow--item img:hover {
     transform: scale(1);
+}
+.movieRow--left, .movieRow--right {
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgb(0, 0, 0,0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.movieRow:hover, .movieRow--left, .movieRow--right {
+    opacity: 1;
+}
+.movieRow--left {
+    left: 0;
+}
+.movieRow--right{
+    right: 0;
+}
+
+@media (max-width: 760px) {
+    .movieRow--left, .movieRow--right{
+        opacity: 1;
+    }
 }
